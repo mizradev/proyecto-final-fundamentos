@@ -1,0 +1,24 @@
+.searchCategory input{
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+	border-radius: 0;
+}
+.searchCategory .btnSearchCategory{
+	border: none;
+	color: tomato;
+}
+.cardCategory, .card-img{
+	border: none;
+	width: 255px;
+	height: 186px;
+}
+.cardCategory .olCategory{
+	background-color: red;
+	background-blend-mode: luminosity;
+}
+.cardCategory .card-img-overlay{
+	padding-top: -1rem;
+}
+.cardCategory .card-img-overlay .iconCategory{
+	font-size: 5rem;
+}
