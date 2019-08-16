@@ -61,12 +61,13 @@ section nav {
   text-align: center;
   background: #ffffff;
   border-radius: 2px;
-  padding: .375rem .75rem;
-  color: #010101;
+  padding: 1rem 1rem;
+  color: #ff8c49;
   border: 1px solid transparent;
   font-size: 1rem;
   line-height: 1.5;
   vertical-align: middle;
+  font-size: 1.2rem;
 }
 
 .btn-style-startud:hover {
@@ -74,8 +75,11 @@ section nav {
 }
 
 .btn-startud {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+}
+
+.text-title-banner {
+  position: absolute;
+  top: 30%;
 }
 /*# sourceMappingURL=style.css.map */
