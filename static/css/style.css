@@ -46,13 +46,36 @@ section nav {
 }
 
 .banner {
-  background: -webkit-gradient(linear, left top, right top, from(#336699), to(#993366));
-  background: linear-gradient(90deg, #336699, #993366);
+  background: -webkit-gradient(linear, left top, right top, from(#ff8c49), to(#3c404f));
+  background: linear-gradient(90deg, #ff8c49, #3c404f);
   width: 100%;
   height: 500px;
 }
 
-p h4 {
-  color: while;
+.h4-style {
+  color: #ffffff;
+}
+
+.btn-style-startud {
+  display: inline-block;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 2px;
+  padding: .375rem .75rem;
+  color: #010101;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.btn-style-startud:hover {
+  cursor: pointer;
+}
+
+.btn-startud {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
