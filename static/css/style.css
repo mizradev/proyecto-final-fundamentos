@@ -79,16 +79,26 @@ section nav {
 }
 
 .text-title-banner {
+  width: 100%;
   position: absolute;
   top: 30%;
+  left: 5%;
+  width: 90%;
+}
+
+/* Facture*/
+.facture {
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
 }
 
 /*stykes footer*/
 footer {
   width: 100%;
-  height: 60px;
+  height: 70px;
   background: #E8E0DA;
-  margin-top: 7.5%;
+  margin-top: 35%;
 }
 
 .box {
@@ -97,5 +107,9 @@ footer {
 
 .box span {
   color: #FF8C49;
+}
+
+.btn-style-card {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
