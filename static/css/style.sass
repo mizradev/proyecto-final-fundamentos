@@ -6,7 +6,7 @@ body
 .Menu
     background: #E8E0DA
     width: 100%
-    box-sizing: border-box;
+    box-sizing: border-box
 
 section nav ul li
     color: #3C404F
@@ -20,7 +20,7 @@ nav li a
     color: #3C404F
 
 .decoracion
-    text-decoration: none !important;
+    text-decoration: none !important
     color: #3C404F
 
 section nav 
@@ -82,6 +82,54 @@ section nav
     margin-top: 3%
 
 
+/* Component Category */
+
+.searchCategory input
+	border-bottom: 1px solid rgba(0,0,0,.3)
+	border-radius: 0
+    border: none
+
+.searchCategory .btnSearchCategory
+	border: none
+    color: tomato
+
+.cardCategory, .card-img
+	border: none
+	width: 255px
+	height: 186px
+
+.cardCategory
+    position: relative
+
+    & .overlay
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        height: 100%
+        width: 100%
+        opacity: 0
+        transition: .5s ease
+        background-color: rgba(0,0,0,.5)
+
+    &:hover .overlay 
+        opacity: 1;
+    & .card-content
+        position: relative;
+        top: -90%
+        left: 10%
+        font-size: 1.5em
+        text-shadow: black 0 0 10px
+        font-weight: bold
+        & .iconCategory
+            font-size: 3.4rem
+	    
+        
+    &.card-img-overlay
+	    padding-top: -1rem;
+    &.card-img-overlay .iconCategory
+	    font-size: 5rem;
 
 /*stykes footer*/
 footer

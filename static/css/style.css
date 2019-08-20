@@ -6,8 +6,7 @@ body {
 .Menu {
   background: #E8E0DA;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section nav ul li {
@@ -46,7 +45,6 @@ section nav {
 }
 
 .banner {
-  background: -webkit-gradient(linear, left top, right top, from(#ff8c49), to(#3c404f));
   background: linear-gradient(90deg, #ff8c49, #3c404f);
   width: 100%;
   height: 500px;
@@ -93,6 +91,66 @@ section nav {
   margin-top: 3%;
 }
 
+/* Component Category */
+.searchCategory input {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  border-radius-border: none;
+}
+
+.searchCategory .btnSearchCategory {
+  border: none;
+  border-color: tomato;
+}
+
+.cardCategory, .card-img {
+  border: none;
+  width: 255px;
+  height: 186px;
+}
+
+.cardCategory {
+  position: relative;
+}
+
+.cardCategory .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardCategory:hover .overlay {
+  opacity: 1;
+}
+
+.cardCategory .card-content {
+  position: relative;
+  top: -90%;
+  left: 10%;
+  font-size: 1.5em;
+  text-shadow: black 0 0 10px;
+  font-weight: bold;
+}
+
+.cardCategory .card-content .iconCategory {
+  font-size: 3.4rem;
+}
+
+.cardCategory.card-img-overlay {
+  padding-top: -1rem;
+}
+
+.cardCategory.card-img-overlay .iconCategory {
+  font-size: 5rem;
+}
+
 /*stykes footer*/
 footer {
   width: 100%;
@@ -112,4 +170,3 @@ footer {
 .btn-style-card {
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
