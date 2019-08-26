@@ -9,7 +9,6 @@ $( () => {
         // peticion ajax minificada con fetch y async/await
         let res = await fetch(`${_APIURLDIRECTORIES}${keyCategorie}/categories`);
         let data = await res.json();
-        
         // peticion ajax normal con fetch
         //fetch(`${_APIURL}${keyCategorie}/categories`)
         //    .then( res => { return res.json() })
