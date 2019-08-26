@@ -57,12 +57,11 @@ $( () => {
         let response = await fetch(_APIURLCATEGORIES);
         let data = await response.json();
         console.log(data.products);
-        
     }
 
     // funcion principal 
     getCategoriesData();
 
     // prueba
-    getProductsByCategorie('f5cff243-9ae0-48da-899f-6ca95cc6a200');
+    //getProductsByCategorie('f5cff243-9ae0-48da-899f-6ca95cc6a200');
 });
