@@ -57,8 +57,8 @@ $( () => {
         let response = await fetch(_APIURLCATEGORIES);
         let data = await response.json();
         console.log(data.products);
+        
     }
-
 
     // funcion principal 
     getCategoriesData();
