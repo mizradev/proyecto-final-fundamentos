@@ -7,9 +7,6 @@ const getCategoriesData = async () => {
     // peticion ajax minificada con fetch y async/await
     let res = await fetch(`${_APIURLDIRECTORIES}${keyCategorie}/categories`);
     let data = await res.json();
-    
-    // se guarda el ID de la categoria para obtener products
-    let idCategorie = data.uuid;
     // array de categorias
     let categories = data.categories; 
 
