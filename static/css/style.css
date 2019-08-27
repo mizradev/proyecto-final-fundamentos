@@ -106,7 +106,7 @@ section nav {
 
 .cardCategory, .card-img {
   border: none;
-  width: 255px;
+  width: 100%;
 }
 
 .cardCategory {
@@ -137,6 +137,7 @@ section nav {
   font-size: 1.5em;
   text-shadow: black 0 0 10px;
   font-weight: bold;
+  width: 100%;
 }
 
 .cardCategory .card-content .iconCategory {
