@@ -39,7 +39,7 @@ $( () => {
     const addCategoriesHTML = (elePadre, categoria, index) => {
         $(`${elePadre}`).append(`
         <div class="col-md-3 col-sm-12 mb-3">
-            <a href='?${categoria.uuid}' target="_blank">
+            <a href='category-page.html?${categoria.uuid}' target="_blank">
                 <div class="card text-white cardCategory">
                     <img src="./static/img/0${index}.jpg" class="card-img" alt="...">
                     <div class="overlay"></div>
