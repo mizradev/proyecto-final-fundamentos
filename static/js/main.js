@@ -22,6 +22,7 @@ $( () => {
         
         // recorre el array de objetos y los pinta en HTML
         categories.forEach( (element,index) => {
+            index++;
             addCategoriesHTML('#categorias', element, index);
         });
 
@@ -38,15 +39,17 @@ $( () => {
     const addCategoriesHTML = (elePadre, categoria, index) => {
         $(`${elePadre}`).append(`
         <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card text-white cardCategory">
-                <img src="./static/img/0${index}.jpg" class="card-img" alt="...">
-                <div class="overlay"></div>
-                <div class="card-content">
-                    <span class="iconCategory material-icons">flash_on</span>
-                    <h3 class="card-title">${categoria.name}</h3>
-                    <p class="">${categoria.id} listings</p>
+            <a href='?${categoria.uuid}' target="_blank">
+                <div class="card text-white cardCategory">
+                    <img src="./static/img/0${index}.jpg" class="card-img" alt="...">
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <span class="iconCategory material-icons">flash_on</span>
+                        <h3 class="card-title">${categoria.name}</h3>
+                        <p class="">${categoria.id} listings</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         `);
     } 

@@ -13,7 +13,6 @@ const getCategoriesData = async () => {
     for (let index = 1; index <= 4; index++) {
         addCategoriesHTML('.indexCategorie', categories[index], index);
     }
-    
     // Descomentar console.log(data); para ver el resultado de la peticion AJAX
     console.log(data);
 }
@@ -22,7 +21,7 @@ const getCategoriesData = async () => {
 const addCategoriesHTML = (elePadre, categoria, index) => {
     $(`${elePadre}`).append(`
     <div class="col-md-3 col-sm-12 mb-3">
-        <a href="?${categoria.uuid}">
+        <a href="?${categoria.uuid}" target="_blank">
         <div class="card text-white cardCategory">
             <img src="./static/img/0${index}.jpg" class="card-img" alt="...">
             <div class="overlay"></div>
